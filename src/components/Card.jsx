@@ -9,7 +9,7 @@ function Card({ data, reference }) {
 
 const Delete = async (id) => {
   // console.log("Delete", id);
-  const apiUrl = `http://localhost:8000/api/docs/${id}`;
+  const apiUrl = `https://docsapi-hets.onrender.com/api/docs/${id}`;
   try {
     const response = await axios({
       method: "delete",

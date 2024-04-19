@@ -19,7 +19,7 @@ function Forground() {
   const ref = useRef();
   useEffect(() => {
     // const fetchData = async () => {
-    //   const apiUrl = `http://localhost:8000/api/docs`;
+    //   const apiUrl = `https://docsapi-hets.onrender.com/api/docs`;
     //   const responce = await axios({
     //     method: "get",
     //      url: apiUrl,
@@ -32,7 +32,7 @@ function Forground() {
     // }
     const fetchData = () => {
       axios
-        .get("http://localhost:8000/api/docs")
+        .get("https://docsapi-hets.onrender.com/api/docs")
         .then((res) => {
           setData(res.data);
           console.log(res);
@@ -44,7 +44,7 @@ function Forground() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const apiUrl = "http://localhost:8000/api/docs";
+    const apiUrl = "https://docsapi-hets.onrender.com/api/docs";
 
     try {
       const data = new FormData();
